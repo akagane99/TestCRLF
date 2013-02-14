@@ -1,5 +1,5 @@
 <?php
-	echo("SOLID");
+	echo("SOFT");
 	phpinfo();
 	echo("DARK");
 ?>
