@@ -12,6 +12,15 @@ TestCRLF
 
 [コミット履歴](https://github.com/akagane99/TestCRLF/commits/master) - 改行コードの変換パターンをいろいろ試してみた。
 
+結論
+----------------
+
+[html, phpコミット４](https://github.com/akagane99/TestCRLF/commit/d3c013b3e1c1388fa4b2263568c04aa0e946935e)
+
+GitHubはLF, ローカルはCRLFにして、autocrlf = true にして２ファイルをコミットしたが、１ファイル改行変換されず微妙。
+
+素直に GitHub 及び ローカルの改行コードを同じにして、autocrlf = false が良さそう。
+
 参考URL
 ----------------
 
@@ -32,18 +41,18 @@ autocrlf設定
 ----------------
 gitconfig, configで設定可能。4か所
 
-・C:\Program Files (x86)\Git\etc\gitconfig
+・wsysgitの共通設定 - C:\Program Files (x86)\Git\etc\gitconfig
 
-・%USERPROFILE%\AppData\Local\GitHub\PortableGit_どーたらこーたら\etc\gitconfig
+・wsysgitのユーザー毎設定 - %USERPROFILE%\.gitconfig
 
-・%USERPROFILE%\.gitconfig
+・GitHub for windowsの設定 - %USERPROFILE%\AppData\Local\GitHub\PortableGit_どーたらこーたら\etc\gitconfig
 
-・ダウンロードしたリポジトリ\.git\config
+・各リポジトリの設定 - ダウンロードしたリポジトリ\.git\config
 
 メモ
 ----------------
 
-%USERPROFILE%\.gitconfig
+・wsysgitのユーザー毎設定 - %USERPROFILE%\.gitconfig
 
 上記コンフィグは、下記コマンドで設定、確認ができた。
 
