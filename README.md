@@ -2,7 +2,9 @@ TestCRLF
 =======
 
 ・はやりのGitHubを使ってみたよ。
+
 ・改行コードで diff が上手く見れずはまってhistoryよごしたよ。
+
 ・気兼ねなく試したいので、リポジトリ作ったよ。
 
 詳しくはここ
@@ -13,24 +15,29 @@ TestCRLF
 参考URL
 ----------------
 
-http://d.hatena.ne.jp/dojum/20121126
-https://github.com/CreateSomethingWithStarling/HagiBreakout/issues/12
-http://d.hatena.ne.jp/couichi/20110207/1297101115
+[GitHub for Windowsいろいろ - 役に立ちそうもないTips](http://d.hatena.ne.jp/dojum/20121126)
+
+[そのうちGitの改行コード、空白文字の設定のルールを決める · Issue #12 · CreateSomethingWithStarling-HagiBreakout](https://github.com/CreateSomethingWithStarling/HagiBreakout/issues/12)
+
+[git config の core.safecrlf って何のためよ？ - 必ず隣あり](http://d.hatena.ne.jp/couichi/20110207/1297101115)
 
 環境
 ----------------
 
 windows7
+
 GitHub for windows
 
 autocrlf設定
 ----------------
-gitconfig, configで設定可能。
-4か所
+gitconfig, configで設定可能。4か所
 
 ・C:\Program Files (x86)\Git\etc\gitconfig
+
 ・%USERPROFILE%\AppData\Local\GitHub\PortableGit_どーたらこーたら\etc\gitconfig
+
 ・%USERPROFILE%\.gitconfig
+
 ・ダウンロードしたリポジトリ\.git\config
 
 メモ
