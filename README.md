@@ -17,7 +17,6 @@ TestCRLF
 
 [html, phpコミット４](https://github.com/akagane99/TestCRLF/commit/d3c013b3e1c1388fa4b2263568c04aa0e946935e)
 
-d3c013b3e1c1388fa4b2263568c04aa0e946935e
 GitHubはLF, ローカルはCRLFにして、autocrlf = true にして２ファイルをコミットしたが、１ファイル改行変換されず微妙。
 
 素直に GitHub 及び ローカルの改行コードを同じにして、autocrlf = false が良さそう。
