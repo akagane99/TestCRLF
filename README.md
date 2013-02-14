@@ -18,14 +18,19 @@ TestCRLF
 
 [html, phpコミット４](https://github.com/akagane99/TestCRLF/commit/d3c013b3e1c1388fa4b2263568c04aa0e946935e) 改行コードずれ有り
 
+[html, php, text コミット５](https://github.com/akagane99/TestCRLF/commit/34b89f520730ea442cad86f6d83793fdac8e551f) 改行コードずれなし
+
+
 [コミット履歴](https://github.com/akagane99/TestCRLF/commits/master) - 改行コードの変換パターンをいろいろ試してみた。
 
 結論
 ----------------
 
-[html, phpコミット４](https://github.com/akagane99/TestCRLF/commit/d3c013b3e1c1388fa4b2263568c04aa0e946935e)
+[html, phpコミット４](https://github.com/akagane99/TestCRLF/commit/d3c013b3e1c1388fa4b2263568c04aa0e946935e) 改行コードずれ有り
 
 GitHubはLF, ローカルはCRLFにして、autocrlf = true にして２ファイルをコミットしたが、１ファイル改行変換されず微妙。
+
+[html, php, text コミット５](https://github.com/akagane99/TestCRLF/commit/34b89f520730ea442cad86f6d83793fdac8e551f) 改行コードずれなし
 
 素直に GitHub 及び ローカルの改行コードを同じにして、autocrlf = false が良さそう。
 
