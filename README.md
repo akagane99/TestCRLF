@@ -10,6 +10,14 @@ TestCRLF
 詳しくはここ
 ----------------
 
+[html, phpコミット１](https://github.com/akagane99/TestCRLF/commit/f6d6ba81822639be206251a319ed4d6b5a64d55f) 改行コードずれ有り
+
+[html, phpコミット２](https://github.com/akagane99/TestCRLF/commit/95987d979cf30f0a265c3ca8b763fa6cce4579dd) 改行コードずれなし
+
+[html, phpコミット３](https://github.com/akagane99/TestCRLF/commit/b246771aa625f2848bf7f6bb60e28d3ea84afa6d) 改行コードずれなし
+
+[html, phpコミット４](https://github.com/akagane99/TestCRLF/commit/d3c013b3e1c1388fa4b2263568c04aa0e946935e) 改行コードずれ有り
+
 [コミット履歴](https://github.com/akagane99/TestCRLF/commits/master) - 改行コードの変換パターンをいろいろ試してみた。
 
 結論
