@@ -32,6 +32,7 @@ TestCRLF
 GitHubはLF, ローカルはCRLFにして、autocrlf = true にして２ファイルをコミットしたが、１ファイル改行変換されず微妙。
 
 
+
 [html, php, text コミット６](https://github.com/akagane99/TestCRLF/commit/8b154bc05f2154c2487a2c3330d3b812dc2f8aa6) 改行コードずれなし
 
 素直に GitHub 及び ローカルの改行コードを同じにして、git config --global core.autocrlf false コマンドを流すのが良さそう。
@@ -69,6 +70,7 @@ gitconfig, configで設定可能。4か所
 ・GitHub for windowsの設定 - %USERPROFILE%\AppData\Local\GitHub\PortableGit_どーたらこーたら\etc\gitconfig
 
 ・各リポジトリの設定 - ダウンロードしたリポジトリ\.git\config
+
 
 
 正確には確認していないけれども、たぶん設定の序列はこんな感じ。
