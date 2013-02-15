@@ -20,6 +20,7 @@ TestCRLF
 
 [html, php, text コミット５](https://github.com/akagane99/TestCRLF/commit/34b89f520730ea442cad86f6d83793fdac8e551f) 改行コードずれなし
 
+[html, php, text コミット６](https://github.com/akagane99/TestCRLF/commit/8b154bc05f2154c2487a2c3330d3b812dc2f8aa6) 改行コードずれなし
 
 [コミット履歴](https://github.com/akagane99/TestCRLF/commits/master) - 改行コードの変換パターンをいろいろ試してみた。
 
@@ -30,9 +31,15 @@ TestCRLF
 
 GitHubはLF, ローカルはCRLFにして、autocrlf = true にして２ファイルをコミットしたが、１ファイル改行変換されず微妙。
 
-[html, php, text コミット５](https://github.com/akagane99/TestCRLF/commit/34b89f520730ea442cad86f6d83793fdac8e551f) 改行コードずれなし
+[html, php, text コミット６](https://github.com/akagane99/TestCRLF/commit/8b154bc05f2154c2487a2c3330d3b812dc2f8aa6) 改行コードずれなし
 
-素直に GitHub 及び ローカルの改行コードを同じにして、autocrlf = false が良さそう。
+素直に GitHub 及び ローカルの改行コードを同じにして、git config --global core.autocrlf false コマンドを流すのが良さそう。
+
+気になる人は、デフォルトから autocrlf = true 設定がある下記を、テキストエディタで autocrlf = false に書き換える。
+
+・wsysgitの共通設定 - C:\Program Files (x86)\Git\etc\gitconfig　　（このファイルは管理者権限でないと書き換えれない）
+
+・GitHub for windowsの設定 - %USERPROFILE%\AppData\Local\GitHub\PortableGit_どーたらこーたら\etc\gitconfig
 
 参考URL
 ----------------
@@ -61,6 +68,10 @@ gitconfig, configで設定可能。4か所
 ・GitHub for windowsの設定 - %USERPROFILE%\AppData\Local\GitHub\PortableGit_どーたらこーたら\etc\gitconfig
 
 ・各リポジトリの設定 - ダウンロードしたリポジトリ\.git\config
+
+正確には確認していないけれども、たぶん設定の序列はこんな感じ。
+
+（弱い）wsysgitの共通設定 ＜ GitHub for windowsの設定 ＜ wsysgitのユーザー毎設定 ＜ 各リポジトリの設定 （強い）
 
 メモ
 ----------------
